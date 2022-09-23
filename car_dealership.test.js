@@ -1,4 +1,4 @@
-
+// Need to fix issues with tests
 
 const Dealership = require('./car_dealership');
 const Car = require('./car_dealership');
@@ -15,12 +15,12 @@ dealers.addCarToStock(batmobile);
 dealers.addCarToStock(lighteningMcQueen);
 dealers.addCarToStock(docHudson);
 
-describe.skip('car', () => {
+describe('car', () => {
 
     test("can get car's price", () => {
-        expected = 100;
-        actual = lighteningMcQueen.getPrice();
-        expect(actual).toBe(expected);
+        // expected = 100;
+        // actual = lighteningMcQueen.price;
+        expect(lighteningMcQueen.price).toBe(100);
     });
 
     test("can get car's manufacturer", () => {
